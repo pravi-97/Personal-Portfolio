@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Formatter</title>
+</head>
+
+<body>
+    <input type="text" name="MovieNameList" id="nameList">
+    <input type="button" value="Generate JSON" onclick="doIt()">
+    <div id="display"></div>
+    <script>
+        function doIt() {
+            outputVal = "";
+            inputVal = document.getElementById('nameList').value;
+            const valuesArray = inputVal.split(";");
+            console.log(valuesArray)
+            valuesArray.forEach(x => {
+                const eachData = x.split("|");
+                console.log(eachData)  
+                outputVal += "{<br>\"show\": \"" + eachData[0] + "\",<br> \"imdbLink\" : \"" + eachData[1] + "\"<br>},<br>";
+            }); 
+            document.getElementById('display').innerHTML = outputVal;
+        }
+
+    </script>
+</body>
+
+</html>

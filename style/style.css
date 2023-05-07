@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+
+    font-family: 'Poltawski Nowy', serif;
+    font-size: 3vh;
+}
+
+#main-content-section {
+    background-color: #e6e6fa;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(255, 4, 234);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* #navbar-section{
+    padding: 10px 0px 20px 0px;
+}
+#main-content-section{
+    /* padding-top: 50px; 
+}
+#row-1-text{
+    /* padding: 130px 0px 130px 0px; 
+}
+#row-1-img{
+    position: relative;
+}
+#blob-img{
+
+} */
+.accordion-item .accordion-button {
+    background-color: rgb(238, 238, 238);
+}
+
+#portfolio {
+    background-color: white;
+}
+
+#card-main {
+    position: relative;
+    text-align: center;
+}
+
+/* .card-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+} */
+
+.card-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#card-body {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    transition: 1s;
+}
+#card-main:hover .card-title {
+    opacity: 1;
+}
+#card-main:hover #card-body {
+    display: block;
+    transition: 1s;
+}
+
+#card-main:hover img {
+    filter: blur(2px);
+}
+
+/* below line will bring up the card title from bottom to center
+
+#card-body {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: rgb(255, 0, 0);
+    background-color: transparent;
+}
+#card-main:hover #card-body{
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+} */
+
+#contact-section{
+    background-color: #e6e6fa;
+}
