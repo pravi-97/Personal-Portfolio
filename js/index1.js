@@ -3,7 +3,6 @@ fetch("shows.json")
     .then(data => createList(data));
 
 function createList(data) {
-    console.log(data);
     const mainUL = document.createElement('ul');
     mainUL.setAttribute('class', 'list-group')
     for (let i = 0; i < data.shows.length; i++) {

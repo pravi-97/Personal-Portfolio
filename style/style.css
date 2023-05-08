@@ -50,14 +50,6 @@ a:hover {
     text-align: center;
 }
 
-/* .card-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: 1s;
-} */
-
 .card-title {
     position: absolute;
     top: 50%;
@@ -73,7 +65,7 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     background-color: transparent;
     transition: 1s;
 }
@@ -86,7 +78,8 @@ a:hover {
 }
 
 #card-main:hover img {
-    filter: blur(2px);
+    /* filter: blur(2px); */
+    filter: brightness(0.5);
 }
 
 /* below line will bring up the card title from bottom to center
@@ -108,4 +101,10 @@ a:hover {
 
 #contact-section{
     background-color: #e6e6fa;
+}
+
+#social-each{
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    fill:red
 }
