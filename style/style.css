@@ -8,6 +8,7 @@
 
 #main-content-section {
     background-color: #e6e6fa;
+    height: 80vh;
 }
 
 a {
@@ -76,35 +77,27 @@ a:hover {
     display: block;
     transition: 1s;
 }
-
+#card-main img {
+    transition: 1s;
+}
 #card-main:hover img {
     /* filter: blur(2px); */
     filter: brightness(0.5);
 }
 
-/* below line will bring up the card title from bottom to center
-
-#card-body {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    color: rgb(255, 0, 0);
-    background-color: transparent;
-}
-#card-main:hover #card-body{
-    width: 100%;
-    position: absolute;
-    top: 0%;
-    color: rgb(255, 255, 255);
-    background-color: transparent;
-} */
-
 #contact-section{
     background-color: #e6e6fa;
 }
 
-#social-each{
+#social{
     padding: 10px;
     color: rgb(255, 255, 255);
-    fill:red
+}
+#social .svg-icon {
+    width: 10%;
+    height: auto;
+    transition: fill 0.3s;
+}
+#social .svg-icon:hover {
+    fill: #9574bd;
 }
