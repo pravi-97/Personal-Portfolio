@@ -10,7 +10,9 @@
     background-color: #e6e6fa;
     /* height: 80vh; */
 }
-
+#bio{
+    padding-top: 120px;
+}
 a {
     color: rgb(0, 0, 0);
     background-color: transparent;
@@ -23,26 +25,11 @@ a:hover {
     text-decoration: none;
 }
 
-/* #navbar-section{
-    padding: 10px 0px 20px 0px;
-}
-#main-content-section{
-    /* padding-top: 50px; 
-}
-#row-1-text{
-    /* padding: 130px 0px 130px 0px; 
-}
-#row-1-img{
-    position: relative;
-}
-#blob-img{
-
-} */
 .accordion-item .accordion-button {
     background-color: rgb(238, 238, 238);
 }
 
-#portfolio {
+#portfolio-section {
     background-color: white;
 }
 
@@ -100,4 +87,14 @@ a:hover {
 }
 #social .svg-icon:hover {
     fill: #9574bd;
+}
+.read-more{
+    opacity: 0.5;
+    transition: 0.5s;
+    color: black;
+}
+.read-more:hover{
+    opacity: 1;
+    color: black;
+    font-weight: bolder;
 }
