@@ -6,13 +6,21 @@
     font-size: 3vh;
 }
 
+/* #navbar-section{
+} */
 #main-content-section {
     background-color: #e6e6fa;
     /* height: 80vh; */
 }
-#bio{
+#about-section,
+#list-TV-Movie {
+    background-color: #e6e6fa;
+    height: 100vh;
+}
+#bio {
     padding-top: 120px;
 }
+
 a {
     color: rgb(0, 0, 0);
     background-color: transparent;
@@ -57,44 +65,91 @@ a:hover {
     background-color: transparent;
     transition: 1s;
 }
+
 #card-main:hover .card-title {
     opacity: 1;
 }
+
 #card-main:hover #card-body {
     display: block;
     transition: 1s;
 }
+
 #card-main img {
     transition: 1s;
 }
+
 #card-main:hover img {
     /* filter: blur(2px); */
     filter: brightness(0.5);
 }
 
-#contact-section{
-    background-color: #e6e6fa;
+#contact-section {
+    background-color: #ffffff;
 }
 
-#social{
+#social {
     padding: 10px;
     color: rgb(255, 255, 255);
 }
+
 #social .svg-icon {
     width: 10%;
     height: auto;
     transition: fill 0.3s;
+    transition: 0.3s;
 }
-#social .svg-icon:hover {
+
+#social:hover .svg-icon {
     fill: #9574bd;
+    transform: translateY(-5px);
 }
-.read-more{
+
+.read-more {
     opacity: 0.5;
     transition: 0.5s;
     color: black;
 }
-.read-more:hover{
+
+.read-more:hover {
     opacity: 1;
     color: black;
     font-weight: bolder;
+}
+
+#form-section {
+    background-color: #e6e6fa;
+}
+
+#form-main {
+    width: 70%;
+}
+
+#img-one,
+#img-two {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#form-img {
+    position: relative;
+    transition: 1s;
+    overflow: hidden;
+}
+
+#img-two {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 1s;
+}
+
+#form-img:hover #img-two {
+    visibility: visible;
+    top: 0;
+    /* left: 0; */
+}
+.main-form{
+    background-color: #9574bd;
 }
