@@ -6,37 +6,21 @@
     font-size: 3vh;
 }
 
-/* #navbar-section{
-} */
+/* Navbar section*/
+#navbar-section {
+    background-color: #ffffff;
+}
+
+/* main content section */
 #main-content-section {
     background-color: #e6e6fa;
-    /* height: 80vh; */
 }
-#about-section,
-#list-TV-Movie {
-    background-color: #e6e6fa;
-    height: 100vh;
-}
+
 #bio {
     padding-top: 120px;
 }
 
-a {
-    color: rgb(0, 0, 0);
-    background-color: transparent;
-    text-decoration: none;
-}
-
-a:hover {
-    color: rgb(255, 4, 234);
-    background-color: transparent;
-    text-decoration: none;
-}
-
-.accordion-item .accordion-button {
-    background-color: rgb(238, 238, 238);
-}
-
+/* Portfolio section  */
 #portfolio-section {
     background-color: white;
 }
@@ -44,6 +28,12 @@ a:hover {
 #card-main {
     position: relative;
     text-align: center;
+}
+
+#card-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .card-title {
@@ -84,6 +74,47 @@ a:hover {
     filter: brightness(0.5);
 }
 
+/* Form Section */
+#form-section {
+    background-color: #e6e6fa;
+}
+
+#form-main #form-img {
+    border-radius: 10px 0% 0% 10px;
+}
+
+#img-one,
+#img-two {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#form-img {
+    position: relative;
+    transition: 1s;
+    overflow: hidden;
+}
+
+#img-two {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 1.5s;
+}
+
+#form-img:hover #img-two {
+    visibility: visible;
+    top: 0;
+}
+
+.act-form {
+    background-color: #9574bd;
+    height: 100%;
+    border-radius: 0% 10px 10px 0%;
+}
+
+/* Contact Section  */
 #contact-section {
     background-color: #ffffff;
 }
@@ -117,39 +148,113 @@ a:hover {
     font-weight: bolder;
 }
 
-#form-section {
+/* About Page and Blog*/
+#about-section,
+#list-TV-Movie {
     background-color: #e6e6fa;
+    height: 100vh;
 }
 
-#form-main {
-    width: 70%;
+a {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
 }
 
+a:hover {
+    color: rgb(255, 4, 234);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.accordion-item .accordion-button {
+    background-color: rgb(238, 238, 238);
+}
+
+@media (min-width: 992px) {
+    /* #form-main .row {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+        } */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #portfolio-section .row {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    #form-main .row {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: larger;
+    }
+    h2 {
+        font-size: larger;
+    }
+    p {
+        font-size: medium;
+    }
+
+    /* navbar and main-content section */
+    #navbar-section#div,
+    #main-content-section#div {
+        padding: 0px 10px 0px 10px;
+    }
+
+    #bio {
+        padding-top: 10px;
+    }
+
+    /* portfolio-section */
+    #portfolio-section .row {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    #form-main .row {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+/* exp */
 #img-one,
 #img-two {
-    width: 100%;
+    display: none;
+}
+.act-form {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
     height: 100%;
-    object-fit: cover;
+    border-radius: 10px 10px 10px 10px;
+    background-image: url("/images/S/e5109b79-c4c9-4721-a20f-12443c06174a.jpg");
+    background-size: contain;
+    background-repeat: no-repeat ;
+}
+.act-form input,textarea,select{
+    opacity: 0.2;
+}
+/* exp end */
 }
 
-#form-img {
-    position: relative;
-    transition: 1s;
-    overflow: hidden;
-}
 
-#img-two {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    transition: 1s;
-}
+@media (max-width: 576px) {
+    #portfolio-section .row div:nth-last-child(even) {
+        margin-left: 40% !important;
 
-#form-img:hover #img-two {
-    visibility: visible;
-    top: 0;
-    /* left: 0; */
-}
-.main-form{
-    background-color: #9574bd;
+    }
+
+    #portfolio-section .row div:nth-last-child(odd) {
+        margin-right: 40% !important;
+    }
 }
