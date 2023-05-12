@@ -123,7 +123,9 @@
     padding: 10px;
     color: rgb(255, 255, 255);
 }
-
+.svg-btn{
+    padding-top: 5% ;
+}
 #social .svg-icon {
     width: 10%;
     height: auto;
@@ -192,6 +194,10 @@ a:hover {
         margin-left: 0px !important;
         margin-right: 0px !important;
     }
+        #social {
+            padding: 8px;
+            color: rgb(255, 255, 255);
+        }
 }
 
 @media (max-width: 767px) {
@@ -204,7 +210,9 @@ a:hover {
     p {
         font-size: medium;
     }
-
+    p a{
+        font-size: medium;
+    }
     /* navbar and main-content section */
     #navbar-section#div,
     #main-content-section#div {
@@ -238,13 +246,25 @@ a:hover {
     height: 100%;
     border-radius: 10px 10px 10px 10px;
     background-image: url("../images/S/e5109b79-c4c9-4721-a20f-12443c06174a.jpg");
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat ;
 }
-.act-form input,textarea,select{
-    opacity: 0.2;
+.act-form div.input-field{
+    opacity: 0.5;
 }
 /* exp end */
+
+ #social {
+     padding: 10px;
+     color: rgb(255, 255, 255);
+ }
+ #social .svg-icon {
+     width: 7%;
+     height: auto;
+     transition: fill 0.3s;
+     transition: 0.3s;
+ }
 }
 
 
