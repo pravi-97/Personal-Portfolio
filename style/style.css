@@ -237,7 +237,7 @@ a:hover {
     background-color: transparent;
     height: 100%;
     border-radius: 10px 10px 10px 10px;
-    background-image: url("/images/S/e5109b79-c4c9-4721-a20f-12443c06174a.jpg");
+    background-image: url("../images/S/e5109b79-c4c9-4721-a20f-12443c06174a.jpg");
     background-size: contain;
     background-repeat: no-repeat ;
 }
@@ -248,13 +248,16 @@ a:hover {
 }
 
 
-@media (max-width: 576px) {
-    #portfolio-section .row div:nth-last-child(even) {
+/* @media (max-width: 576px) { */
+    /* #portfolio-section .row div:nth-last-child(even) {
         margin-left: 40% !important;
-
     }
+        #portfolio-section .row div a {
+            overflow: hidden;
+    
+        }
 
     #portfolio-section .row div:nth-last-child(odd) {
         margin-right: 40% !important;
-    }
-}
+    } */
+/* } */
