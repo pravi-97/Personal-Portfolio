@@ -1,57 +1,32 @@
-function fetchWebsiteData(url) {
-  return new Promise(function (resolve, reject) {
-    var proxyUrl = "https://api.allorigins.win/get?url="; // use a proxy server
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", proxyUrl + encodeURIComponent(url), true);
-    xhr.setRequestHeader("Accept", "text/html");
-    xhr.onreadystatechange = function () {
-      if (this.readyState == 4) {
-        if (this.status == 200) {
-          var parser = new DOMParser();
-          var htmlDoc = parser.parseFromString(
-            JSON.parse(this.responseText).contents,
-            "text/html"
-          );
-          resolve(htmlDoc);
-        } else {
-          reject("Error: " + xhr.status);
-        }
-      }
-    };
-    xhr.send();
-  });
+function validateForm() {
+  var fullName = document.getElementById("fullName")
+  var eMAil = document.getElementById("eMAil")
+  var contactReason = document.getElementById("contactReason")
+  var comment = document.getElementById("comment")
+
+  if (fullName.value == "") {
+    displayMessage(fullName);
+  }
+  if (eMAil.value == "") {
+    displayMessage(eMAil);
+  }
+  if (contactReason.value == "") {
+    displayMessage(contactReason);
+  }
+  if (comment.value == "") {
+    displayMessage(comment);
+  }
+
 }
 
-fetch("/data.txt")
-  .then((response) => response.text())
-  .then((data) => {
-    const cleanedData = data.replace(/[\r\n\t]/g, "");
-    const valuesArray = cleanedData.split(",");
+function displayMessage(obj) {
+  var x = obj.parentElement.lastElementChild;
+  x.style.visibility = "visible";
+  event.preventDefault()
+  event.stopPropagation()
+  obj.classList.add("is-invalid");
+}
 
-    valuesArray.forEach((element) => {
-      fetchWebsiteData(element)
-        .then(function (htmlDoc) {
-          var title = htmlDoc.getElementsByClassName("mw-page-title-main")[0].textContent;
-          document.get;
-          const img = htmlDoc.querySelector(".infobox-image img");
-          const srcCopy = img.getAttribute("src");
-          const div = document.createElement("div")
-          const picture = document.createElement("img");
-          picture.setAttribute("src", srcCopy);
-          picture.setAttribute("alt", title);
-          const p = document.createElement("p")
-          p.innerHTML = title;
-          div.appendChild(picture);
-          div.appendChild(p);
-          document.getElementById("myDIV").appendChild(div);
-        })
-        .catch(function (error) {
-          console.error(error);
-        });
-    });
-  })
-  .catch((error) => {
-    console.error("Error reading the file:", error);
-  });
+function removeRed(){
 
-
+}
