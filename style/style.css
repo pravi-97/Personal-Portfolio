@@ -4,20 +4,6 @@
 
     font-family: 'Poltawski Nowy', serif;
     font-size: 3vh;
-    color: #ffffff;
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
-    display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-body {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
 }
 
 /* Navbar section*/
@@ -27,7 +13,7 @@ body {
 
 /* main content section */
 #main-content-section {
-    background-color: #000000;
+    background-color: #e6e6fa;
 }
 
 #bio {
@@ -90,8 +76,7 @@ body {
 
 /* Form Section */
 #form-section {
-    background-color: #000000;
-    color: #000000;
+    background-color: #e6e6fa;
 }
 
 #form-main #form-img {
@@ -124,32 +109,10 @@ body {
 }
 
 .act-form {
-    background-color: #000000;
+    background-color: #9574bd;
     height: 100%;
-    color: #000000;
     border-radius: 0% 10px 10px 0%;
 }
-form .form-control,
-.form-select,
-.form-select #option_val,
-input {
-    background-color: transparent;
-    /* height: 10%; */
-    color: #000000;
-    /* border: 1rem; */
-}
-
-form .form-control:focus {
-    background-color: transparent;
-    /* border: 0px; */
-    box-shadow: none;
-    color: #ffffff;
-}
-.form-buttons{
-    bottom: 0;
-}
-
-
 
 /* Contact Section  */
 #contact-section {
@@ -160,11 +123,9 @@ form .form-control:focus {
     padding: 10px;
     color: rgb(255, 255, 255);
 }
-
-.svg-btn {
-    padding-top: 5%;
+.svg-btn{
+    padding-top: 5% ;
 }
-
 #social .svg-icon {
     width: 10%;
     height: auto;
@@ -193,7 +154,7 @@ form .form-control:focus {
 #about-section,
 #list-TV-Movie {
     background-color: #e6e6fa;
-    padding-top: 10px;
+    height: 100vh;
 }
 
 a {
@@ -233,30 +194,25 @@ a:hover {
         margin-left: 0px !important;
         margin-right: 0px !important;
     }
-
-    #social {
-        padding: 8px;
-        color: rgb(255, 255, 255);
-    }
+        #social {
+            padding: 8px;
+            color: rgb(255, 255, 255);
+        }
 }
 
 @media (max-width: 767px) {
     h1 {
         font-size: larger;
     }
-
     h2 {
         font-size: larger;
     }
-
     p {
         font-size: medium;
     }
-
-    p a {
+    p a{
         font-size: medium;
     }
-
     /* navbar and main-content section */
     #navbar-section#div,
     #main-content-section#div {
@@ -279,46 +235,41 @@ a:hover {
         margin-left: 0px !important;
         margin-right: 0px !important;
     }
+/* exp */
+#img-one,
+#img-two {
+    display: none;
+}
+.act-form {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    height: 100%;
+    border-radius: 10px 10px 10px 10px;
+    background-image: url("../images/S/e5109b79-c4c9-4721-a20f-12443c06174a.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat ;
+}
+.act-form div.input-field{
+    opacity: 0.5;
+}
+/* exp end */
 
-    /* exp */
-    #img-one,
-    #img-two {
-        display: none;
-    }
-
-    .act-form {
-        color: rgb(0, 0, 0);
-        background-color: transparent;
-        height: 100%;
-        border-radius: 10px 10px 10px 10px;
-        background-image: url("../images/S/e5109b79-c4c9-4721-a20f-12443c06174a.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .act-form div.input-field {
-        /* opacity: 0.5; */
-    }
-
-    /* exp end */
-
-    #social {
-        /* padding: 10px;
-     color: rgb(255, 255, 255); */
-    }
-
-    #social .svg-icon {
-        width: 7%;
-        height: auto;
-        transition: fill 0.3s;
-        transition: 0.3s;
-    }
+ #social {
+     padding: 10px;
+     color: rgb(255, 255, 255);
+ }
+ #social .svg-icon {
+     width: 7%;
+     height: auto;
+     transition: fill 0.3s;
+     transition: 0.3s;
+ }
 }
 
 
 /* @media (max-width: 576px) { */
-/* #portfolio-section .row div:nth-last-child(even) {
+    /* #portfolio-section .row div:nth-last-child(even) {
         margin-left: 40% !important;
     }
         #portfolio-section .row div a {
