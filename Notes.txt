@@ -1,2 +1,4 @@
 primary color : #9574bd
 secondary color: #e6e6fa or #d7b4f3
+
+#123 goes well with yellow
