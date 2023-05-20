@@ -34,17 +34,28 @@ body {
     margin-left: 5px;
     margin-right: 5px;
     border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+    color: black;
 }
 
 .navbar-nav .nav-link.active {
-    background-color: #000000;
-    color: yellow;
+    background-color: #123;
+    color: rgb(255, 255, 255);
+    /* box-shadow: 0 0 10px 5px #123; */
+
 }
 
-.nav-link:hover,
+.nav-link:hover {
+    background-color: #123;
+    color: yellow;
+    box-shadow: 0 0 10px 5px #123;
+}
+
 .nav-link.active:hover {
-    background-color: yellow;
-    color: #000000;
+    background-color: #123;
+    color: yellow;
+    box-shadow: 0 0 10px 5px #123;
 }
 
 /* Navbar section ends*/
@@ -53,6 +64,7 @@ body {
     background-color: #123;
     color: #ffffff;
 }
+
 #bio {
     padding-top: 120px;
 }
@@ -71,47 +83,42 @@ body {
 #card-main img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
-
-.card-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.5s;
+    object-fit: contain;
+    transition: 0.5s;
 }
 
 #card-body {
     width: 100%;
     position: absolute;
+    /* background-color: red; */
+    color: #ffffff;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    padding: 0;
+
+}
+
+#card-body .card-title {
+    margin-bottom: 0;
+}
+
+#card-main:hover .card-body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(255, 255, 255);
-    background-color: transparent;
-    transition: 1s;
-}
-
-#card-main:hover .card-title {
-    opacity: 1;
-}
-
-#card-main:hover #card-body {
-    display: block;
-    transition: 1s;
-}
-
-#card-main img {
-    transition: 1s;
+    /* background-color: #123; */
+    color: yellow;
 }
 
 #card-main:hover img {
-    /* filter: blur(2px); */
-    filter: brightness(0.5);
+    /* filter: brightness(0.5); */
+    filter: blur(3px);
+    box-shadow: 0 0 20px 5px yellow;
 }
 
+/* Portfolio section ends */
 /* Form Section */
 #form-section {
     background-color: #123;
@@ -147,9 +154,9 @@ body {
 }
 
 .act-form {
-    /* background-color: #ffffff; */
+    background-color: #ffffff;
     /* background: url("../images/main-content/170151987a666331667213570cb4a650.jpg"); */
-    background: url("https://c0.wallpaperflare.com/preview/793/1023/818/background-crumpled-crushed-garbage.jpg");
+    /* background: url("https://c0.wallpaperflare.com/preview/793/1023/818/background-crumpled-crushed-garbage.jpg"); */
     height: 100%;
     border-radius: 0% 10px 10px 0%;
     color: rgb(0, 0, 0);
@@ -158,10 +165,30 @@ body {
     object-fit: cover;
 }
 
+#form-content .btn {
+    background-color: #123;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+#form-content .btn:hover {
+    background-color: #123;
+    color: yellow;
+    /* box-shadow: none; */
+    box-shadow: 0 0 10px 5px #123;
+}
+
 /* Portfolio section ends */
+
+/* Reviews Section */
+#reviews-section{
+
+}
+/* Reviews Section ends*/
 /* Contact Section  */
 #contact-section {
-    background-color: #ffffff;
+    background-color: #123;
+    color: #ffffff;
 }
 
 #social {
@@ -188,12 +215,12 @@ body {
 .read-more {
     opacity: 0.5;
     transition: 0.5s;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .read-more:hover {
     opacity: 1;
-    color: black;
+    color: #fff;
     font-weight: bolder;
 }
 
@@ -201,8 +228,9 @@ body {
 /* About Page and Blog*/
 #about-section,
 #list-TV-Movie {
-    background-color: #e6e6fa;
+    background-color: #123;
     min-height: 100vh;
+    color: #ffffff;
 }
 
 a {
