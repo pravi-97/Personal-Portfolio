@@ -181,9 +181,94 @@ body {
 /* Portfolio section ends */
 
 /* Reviews Section */
-#reviews-section{
+#reviews-section {}
+
+.review-container {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.review-container .logo {
+    display: inline-block;
+}
+
+.review {
+    color: #fff;
+    margin-left: 60px;
+    white-space: normal;
+    background-color: #123;
+    border: black 5px;
+    width: 700px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.review-slide {
+    position: relative;
+    margin: 50px;
 
 }
+
+.stars,
+.review-title,
+.main-review,
+.review-img {
+    position: absolute;
+}
+
+.review-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    top: -50px;
+    left: -100px;
+}
+
+.review-title {
+    top: 50px;
+    left: 10px;
+}
+
+.review-title h1 {
+    font-size: xx-large;
+}
+
+.main-review {
+    top: 150px;
+    left: 10px;
+}
+
+.stars {
+    top: 25px;
+    right: -30px;
+}
+
+.logos {
+    overflow: hidden;
+    /* padding: 60px 0px; */
+    background: white;
+    white-space: nowrap;
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 10s slide infinite linear;
+}
+
+@keyframes slide {
+     from {
+         transform: translateX(0);
+     }
+
+     to {
+         transform: translateX(-100%);
+     }
+ }
 /* Reviews Section ends*/
 /* Contact Section  */
 #contact-section {
@@ -225,6 +310,7 @@ body {
 }
 
 /* Contact Section  ends*/
+
 /* About Page and Blog*/
 #about-section,
 #list-TV-Movie {
