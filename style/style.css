@@ -198,8 +198,8 @@ body {
     white-space: normal;
     background-color: #123;
     border: black 5px;
-    width: 700px;
-    height: 250px;
+    width: 600px;
+    min-height: 300px;
     border-radius: 15px;
 }
 
@@ -212,33 +212,47 @@ body {
 .stars,
 .review-title,
 .main-review,
-.review-img {
+.review-img,
+.user_info {
     position: absolute;
 }
 
 .review-img {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     object-fit: cover;
-    top: -50px;
-    left: -100px;
+    top: -45px;
+    left: -95px;
 }
 
-.review-title {
-    top: 50px;
-    left: 10px;
+.user_info p{
+    margin-top: 3px;
 }
 
-.review-title h1 {
+.r_name {
     font-size: xx-large;
 }
 
-.main-review {
-    top: 150px;
-    left: 10px;
+.r_occupation {
+    font-size: small;
+    margin-left: 5px;
 }
 
+.review-title {
+    margin-top: 60px;
+}
+
+.review-title h3 {
+    font-size: larger;
+}
+
+.main-review {
+margin-top: 130px;
+}
+.main-review p{
+    font-size: medium;
+}
 .stars {
     top: 25px;
     right: -30px;
@@ -269,6 +283,13 @@ body {
          transform: translateX(-100%);
      }
  }
+
+ .review-button{
+    float: right;
+ }
+  .review-button .btn{
+    background-color: #123;
+  }
 /* Reviews Section ends*/
 /* Contact Section  */
 #contact-section {
