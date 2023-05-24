@@ -181,7 +181,9 @@ body {
 /* Portfolio section ends */
 
 /* Reviews Section */
-#reviews-section {}
+#reviews-section {
+    background-color: white;
+}
 
 .review-container {
     white-space: nowrap;
@@ -226,7 +228,7 @@ body {
     left: -95px;
 }
 
-.user_info p{
+.user_info p {
     margin-top: 3px;
 }
 
@@ -248,11 +250,13 @@ body {
 }
 
 .main-review {
-margin-top: 130px;
+    margin-top: 130px;
 }
-.main-review p{
+
+.main-review p {
     font-size: medium;
 }
+
 .stars {
     top: 25px;
     right: -30px;
@@ -275,21 +279,23 @@ margin-top: 130px;
 }
 
 @keyframes slide {
-     from {
-         transform: translateX(0);
-     }
+    from {
+        transform: translateX(0);
+    }
 
-     to {
-         transform: translateX(-100%);
-     }
- }
+    to {
+        transform: translateX(-100%);
+    }
+}
 
- .review-button{
+.review-button {
     float: right;
- }
-  .review-button .btn{
+}
+
+.review-button .btn {
     background-color: #123;
-  }
+}
+
 /* Reviews Section ends*/
 /* Contact Section  */
 #contact-section {
@@ -357,6 +363,89 @@ a:hover {
 }
 
 /* About Page and Blog ends */
+/* Main Revioew Page Starts */
+.reviews-main {
+    max-height: 100vh;
+    /* margin-top: 15px; */
+    overflow: scroll;
+}
+.m-review-slide{
+    padding: 10px;
+}
+.m-review {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    color: #fff;
+    white-space: normal;
+    background-color: #123;
+    width: 100%;
+    min-height: 300px;
+    border-radius: 15px;
+}
+.m-stars{
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+.m-review-img {
+    border-radius: 15px;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+
+.m-user_info{
+    position: absolute;
+    top: 0;
+    left: 110px;
+    margin-top: 65px;
+}
+.m-r_name {
+    font-size: xx-large;
+}
+
+.m-r_occupation {
+    font-size: small;
+}
+.m-review-title{
+    padding-top: 20px;
+}
+.m-main-review {
+    top: 150px;
+}
+.m-review-title {
+    top: 10px;
+}
+
+.m-review-title h3 {
+    font-size: larger;
+}
+.m-main-review p {
+    font-size: medium;
+}
+.review-date{
+    font-size: small;
+} 
+.client-site{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #123;
+    padding: 0px 10px 0px 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.client-site a{
+    color: rgb(255, 255, 255);
+    font-size: small;
+    transition: 0.3s;
+}
+.client-site:hover a{
+    color: yellow;
+    font-weight: bolder;
+}
+/* Main Review Page ends */
 @media (min-width: 992px) {
     /* #form-main .row {
             padding-left: 0px !important;
