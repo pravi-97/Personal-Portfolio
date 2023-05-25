@@ -1,57 +1,27 @@
-function fetchWebsiteData(url) {
-  return new Promise(function (resolve, reject) {
-    var proxyUrl = "https://api.allorigins.win/get?url="; // use a proxy server
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", proxyUrl + encodeURIComponent(url), true);
-    xhr.setRequestHeader("Accept", "text/html");
-    xhr.onreadystatechange = function () {
-      if (this.readyState == 4) {
-        if (this.status == 200) {
-          var parser = new DOMParser();
-          var htmlDoc = parser.parseFromString(
-            JSON.parse(this.responseText).contents,
-            "text/html"
-          );
-          resolve(htmlDoc);
-        } else {
-          reject("Error: " + xhr.status);
-        }
-      }
-    };
-    xhr.send();
-  });
+var ratingSet = false;
+var stars = 0;
+function ratingMOver(object, starCount) {
+  if (ratingSet == false) {
+    for (var i = 0; i < starCount; i++) {
+      object.children[i].style.color = "#ffde78"
+    }
+  }
 }
 
-fetch("/data.txt")
-  .then((response) => response.text())
-  .then((data) => {
-    const cleanedData = data.replace(/[\r\n\t]/g, "");
-    const valuesArray = cleanedData.split(",");
+function ratingMOut(object, starCount) {
+  if (ratingSet == false) {
+    for (var i = 0; i < starCount; i++) {
+      console.log(starCount - 1);
+      object.children[i].style.color = "#fff"
+    }
+  }
+}
 
-    valuesArray.forEach((element) => {
-      fetchWebsiteData(element)
-        .then(function (htmlDoc) {
-          var title = htmlDoc.getElementsByClassName("mw-page-title-main")[0].textContent;
-          document.get;
-          const img = htmlDoc.querySelector(".infobox-image img");
-          const srcCopy = img.getAttribute("src");
-          const div = document.createElement("div")
-          const picture = document.createElement("img");
-          picture.setAttribute("src", srcCopy);
-          picture.setAttribute("alt", title);
-          const p = document.createElement("p")
-          p.innerHTML = title;
-          div.appendChild(picture);
-          div.appendChild(p);
-          document.getElementById("myDIV").appendChild(div);
-        })
-        .catch(function (error) {
-          console.error(error);
-        });
-    });
-  })
-  .catch((error) => {
-    console.error("Error reading the file:", error);
-  });
-
-
+function ratingMClick(object, starCount) {
+  for (var i = 0; i < starCount; i++) {
+    object.children[i].style.color = "#ffc107"
+  }
+  ratingSet = true;
+  stars = starCount;
+  console.log(stars)
+}

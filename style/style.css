@@ -154,15 +154,58 @@ body {
 }
 
 .act-form {
-    background-color: #ffffff;
-    /* background: url("../images/main-content/170151987a666331667213570cb4a650.jpg"); */
-    /* background: url("https://c0.wallpaperflare.com/preview/793/1023/818/background-crumpled-crushed-garbage.jpg"); */
+    color: #fff;
+    background: url("../images/S/e5109b79-c4c9-4721-a20f-12443c06174a.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100%;
     border-radius: 0% 10px 10px 0%;
-    color: rgb(0, 0, 0);
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.act-form h2,
+.act-form p{
+background: -webkit-linear-gradient(left, rgb(255, 255, 255), yellow);
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-control,
+.form-select {
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0%;
+    /* border-color: coral; */
+    border-color: yellow;
+    color: #fff;
+    background-color: transparent;
+}
+
+.form-select:focus,
+.form-control:focus {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-select option {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+
+.input-field label {
+    color: rgb(255, 255, 255);
+}
+
+.input-field:focus label {
+    color: #ffffff !important;
 }
 
 #form-content .btn {
@@ -364,7 +407,7 @@ a:hover {
 
 /* About Page and Blog ends */
 /* Main Revioew Page Starts */
-.reviews-filter{
+.reviews-filter {
     margin-top: 15px;
 }
 
@@ -373,9 +416,11 @@ a:hover {
     /* margin-top: 15px; */
     overflow-y: scroll;
 }
-.m-review-slide{
+
+.m-review-slide {
     padding: 10px;
 }
+
 .m-review {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -387,11 +432,13 @@ a:hover {
     min-height: 250px;
     border-radius: 15px;
 }
-.m-stars{
+
+.m-stars {
     position: absolute;
     top: 40px;
     right: 10px;
 }
+
 .m-review-img {
     border-radius: 15px;
     width: 75px;
@@ -399,12 +446,13 @@ a:hover {
     object-fit: cover;
 }
 
-.m-user_info{
+.m-user_info {
     position: absolute;
     top: 0;
     left: 95px;
     margin-top: 55px;
 }
+
 .m-r_name {
     font-size: x-large;
 }
@@ -412,12 +460,15 @@ a:hover {
 .m-r_occupation {
     font-size: x-small;
 }
-.m-review-title{
+
+.m-review-title {
     padding-top: 20px;
 }
+
 .m-main-review {
     top: 150px;
 }
+
 .m-review-title {
     top: 10px;
 }
@@ -426,13 +477,16 @@ a:hover {
     font-size: smaller;
     font-weight: bolder;
 }
+
 .m-main-review p {
     font-size: small;
 }
-.review-date{
+
+.review-date {
     font-size: x-small;
-} 
-.client-site{
+}
+
+.client-site {
     position: absolute;
     bottom: 10px;
     right: 10px;
@@ -441,15 +495,18 @@ a:hover {
     border-radius: 10px;
     transition: 0.5s;
 }
-.client-site a{
+
+.client-site a {
     color: rgb(255, 255, 255);
     font-size: small;
     transition: 0.3s;
 }
-.client-site:hover a{
+
+.client-site:hover a {
     color: yellow;
     font-weight: bolder;
 }
+
 /* Main Review Page ends */
 @media (min-width: 992px) {
     /* #form-main .row {
@@ -526,18 +583,7 @@ a:hover {
     }
 
     .act-form {
-        color: rgb(0, 0, 0);
-        background-color: transparent;
-        height: 100%;
         border-radius: 10px 10px 10px 10px;
-        background-image: url("../images/S/e5109b79-c4c9-4721-a20f-12443c06174a.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .act-form div.input-field {
-        opacity: 0.5;
     }
 
     /* exp end */
