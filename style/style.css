@@ -364,10 +364,14 @@ a:hover {
 
 /* About Page and Blog ends */
 /* Main Revioew Page Starts */
+.reviews-filter{
+    margin-top: 15px;
+}
+
 .reviews-main {
     max-height: 100vh;
     /* margin-top: 15px; */
-    overflow: scroll;
+    overflow-y: scroll;
 }
 .m-review-slide{
     padding: 10px;
@@ -380,7 +384,7 @@ a:hover {
     white-space: normal;
     background-color: #123;
     width: 100%;
-    min-height: 300px;
+    min-height: 250px;
     border-radius: 15px;
 }
 .m-stars{
@@ -390,23 +394,23 @@ a:hover {
 }
 .m-review-img {
     border-radius: 15px;
-    width: 90px;
-    height: 90px;
+    width: 75px;
+    height: 75px;
     object-fit: cover;
 }
 
 .m-user_info{
     position: absolute;
     top: 0;
-    left: 110px;
-    margin-top: 65px;
+    left: 95px;
+    margin-top: 55px;
 }
 .m-r_name {
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .m-r_occupation {
-    font-size: small;
+    font-size: x-small;
 }
 .m-review-title{
     padding-top: 20px;
@@ -419,13 +423,14 @@ a:hover {
 }
 
 .m-review-title h3 {
-    font-size: larger;
+    font-size: smaller;
+    font-weight: bolder;
 }
 .m-main-review p {
-    font-size: medium;
+    font-size: small;
 }
 .review-date{
-    font-size: small;
+    font-size: x-small;
 } 
 .client-site{
     position: absolute;
