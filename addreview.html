@@ -42,84 +42,95 @@
         </nav>
     </section>
     <section id="add-review-section">
-        <div class="container " id="form-main">
-            <div class="row px-5 mx-5">
-                <!-- <div class="col-md-6 p-0 m-0">
-                    <div class="image-container" id="form-img">
-                        <img class="img-fluid " id="img-one" src="./images/S/c844aee1abcca81dab4627a5472a1ac4.jpg" alt="...">
-                        <img class="img-fluid " id="img-two" src="./images/S/e5109b79-c4c9-4721-a20f-12443c06174a.jpg"
-                            alt="...">
-                    </div>
-                </div> -->
+        <div class="container " id="review-form-main">
+            <div class="row">
                 <div class="col-lg-12 p-0 m-0">
-                    <div class="act-form p-3">
-                        <h2>Get in Touch!</h2>
-                        <p>Want to know more or have any doubts?. No problem, Fill out the below form and I'll get back
-                            to you shortly!</p>
+                    <div class="review-act-form p-3">
+                        <h2>Reviews!!!</h2>
+                        <p>Some content you enter here will be published in the website!</p>
                         <form action="" id="form-content" autocomplete="off">
-                            <div class="form-floating mb-3 input-field">
+                            <span class="form-floating mb-3 input-field">
                                 <input type="text" class="form-control" id="fullName" placeholder="John Doe">
                                 <label for="fullName">Full Name</label>
-                            </div>
-                            <div class="form-floating mb-3 input-field">
+                            </span>
+                            <span class="form-floating mb-3 input-field">
                                 <input type="text" class="form-control" id="occupation" placeholder="Project Manager">
                                 <label for="occupation">Occupation</label>
-                            </div>
-                            <div class="form-floating mb-3 input-field">
+                            </span>
+                            <span class="form-floating mb-3 input-field">
                                 <input type="text" class="form-control" id="company" placeholder="YelloWorld!">
                                 <label for="company">Company</label>
-                            </div>
-                            <div class="form-floating mb-3 input-field">
+                            </span>
+                            <span class="form-floating mb-3 input-field">
                                 <input type="email" class="form-control" id="eMAil" placeholder="johndoe@example.com">
                                 <label for="eMAil">Email address</label>
-                            </div>
-                            <div class="form-floating mb-3 input-field">
+                            </span>
+                            <span class="form-floating mb-3 input-field">
                                 <input type="tel" class="form-control" id="phoneNo" placeholder="+91-9999 888888">
                                 <label for="phoneNo">Phone</label>
-                            </div>
+                            </span>
                             <p>Did we do a project for you?</p>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <span class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="option1">
                                 <label class="form-check-label" for="inlineRadio1">Yes</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            </span>
+                            <span class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2">
                                 <label class="form-check-label" for="inlineRadio2">No</label>
-                            </div>
+                            </span>
                             <div class="form-floating mb-3 input-field">
                                 <input type="text" class="form-control" id="projLink" placeholder="www.yelloworld.com">
                                 <label for="projLink">Link to the project</label>
                             </div>
-                            <p>How would you rate the experience on a scale of 1 to 5 where 1 is poor and 5 being excellent!</p>
+                            <p>How would you rate the experience on a scale of 1 to 5 where 1 is poor and 5 being
+                                excellent!</p>
                             <div class="review-stars">
-                                <i class="fa-solid fa-star" onmouseover="ratingMOver(this.parentElement, 1)" onmouseleave="ratingMOut(this.parentElement, 1)" onclick="ratingMClick(this.parentElement, 1)"></i>
-                                <i class="fa-solid fa-star" onmouseover="ratingMOver(this.parentElement, 2)" onmouseleave="ratingMOut(this.parentElement, 2)" onclick="ratingMClick(this.parentElement, 2)"></i>
-                                <i class="fa-solid fa-star" onmouseover="ratingMOver(this.parentElement, 3)" onmouseleave="ratingMOut(this.parentElement, 3)" onclick="ratingMClick(this.parentElement, 3)"></i>
-                                <i class="fa-solid fa-star" onmouseover="ratingMOver(this.parentElement, 4)" onmouseleave="ratingMOut(this.parentElement, 4)" onclick="ratingMClick(this.parentElement, 4)"></i>
-                                <i class="fa-solid fa-star" onmouseover="ratingMOver(this.parentElement, 5)" onmouseleave="ratingMOut(this.parentElement, 5)" onclick="ratingMClick(this.parentElement, 5)"></i>
+                                <i class="fa-solid fa-star rating-star" onmouseover="ratingMOver(this.parentElement, 1)"
+                                    onmouseleave="ratingMOut(this.parentElement, 1)"
+                                    onclick="ratingMClick(this.parentElement, 1)"></i>
+                                <i class="fa-solid fa-star rating-star" onmouseover="ratingMOver(this.parentElement, 2)"
+                                    onmouseleave="ratingMOut(this.parentElement, 2)"
+                                    onclick="ratingMClick(this.parentElement, 2)"></i>
+                                <i class="fa-solid fa-star rating-star" onmouseover="ratingMOver(this.parentElement, 3)"
+                                    onmouseleave="ratingMOut(this.parentElement, 3)"
+                                    onclick="ratingMClick(this.parentElement, 3)"></i>
+                                <i class="fa-solid fa-star rating-star" onmouseover="ratingMOver(this.parentElement, 4)"
+                                    onmouseleave="ratingMOut(this.parentElement, 4)"
+                                    onclick="ratingMClick(this.parentElement, 4)"></i>
+                                <i class="fa-solid fa-star rating-star" onmouseover="ratingMOver(this.parentElement, 5)"
+                                    onmouseleave="ratingMOut(this.parentElement, 5)"
+                                    onclick="ratingMClick(this.parentElement, 5)"></i>
                             </div>
-                            <div class="form-floating mb-3 input-field">
-                                <input type="text" class="form-control" id="reviewTitle" placeholder="Lorem ipsum dolor sit amet.">
+                            <span class="form-floating mb-3 input-field">
+                                <input type="text" class="form-control" id="reviewTitle"
+                                    placeholder="Lorem ipsum dolor sit amet.">
                                 <label for="reviewTitle">Review Title</label>
-                            </div>
-                            <div class="form-floating mb-3 input-field">
-                                <textarea class="form-control" placeholder="Lorem ipsum dolor sit amet." id="reviewComment"
-                                    style="height: 100px"></textarea>
+                            </span>
+                            <span class="form-floating mb-3 input-field">
+                                <textarea class="form-control" placeholder="Lorem ipsum dolor sit amet."
+                                    id="reviewComment" style="height: 100px"></textarea>
                                 <label for="reviewComment">Review Comment</label>
-                            </div>
-                            <p>The below fields will not be published in the webiste. these are for me to learn how to do a better job!</p>
-                            <div class="form-floating mb-3 input-field">
-                                <input type="text" class="form-control" id="question1" placeholder="Lorem ipsum dolor sit amet.">
+                            </span>
+                            <p>The below fields will not be published in the webiste. these are for me to learn how to
+                                do a better job!</p>
+                            <span class="form-floating mb-3 input-field">
+                                <textarea class="form-control" placeholder="Lorem ipsum dolor sit amet." id="question1"
+                                    style="height: 100px"></textarea>
                                 <label for="question1">What do you think could have been better?</label>
-                            </div>
-                            <div class="form-floating mb-3 input-field">
-                                <input type="text" class="form-control" id="question1" placeholder="Lorem ipsum dolor sit amet.">
-                                <label for="question1">What did you like about working with us?</label>
-                            </div>
-                            <div class="form-floating mb-3 input-field">
-                                <input type="text" class="form-control" id="question1" placeholder="Lorem ipsum dolor sit amet.">
-                                <label for="question1">Do you have any other feedback that you would like to share?</label>
-                            </div>
+                            </span>
+                            <span class="form-floating mb-3 input-field">
+                                <textarea class="form-control" placeholder="Lorem ipsum dolor sit amet." id="question2"
+                                    style="height: 100px"></textarea>
+                                <label for="question2">What did you like about working with us?</label>
+                            </span>
+                            <span class="form-floating mb-3 input-field">
+                                <textarea class="form-control" placeholder="Lorem ipsum dolor sit amet." id="question3"
+                                    style="height: 100px"></textarea>
+                                <label for="question3">Do you have any other feedback that you would like to
+                                    share</label>
+                            </span>
                             <div class="mb-3 text-center">
                                 <input class="btn btn-primary mx-1" type="submit" value="Submit">
                                 <input class="btn btn-primary mx-1" type="reset" value="Reset">

@@ -3,7 +3,11 @@ var stars = 0;
 function ratingMOver(object, starCount) {
   if (ratingSet == false) {
     for (var i = 0; i < starCount; i++) {
-      object.children[i].style.color = "#ffde78"
+      object.children[i].style.color = "#ffde78";
+    }
+  } else if (starCount > stars) {
+    for (var i = stars; i < starCount; i++) {
+      object.children[i].style.color = "#ffde78";
     }
   }
 }
@@ -11,17 +15,25 @@ function ratingMOver(object, starCount) {
 function ratingMOut(object, starCount) {
   if (ratingSet == false) {
     for (var i = 0; i < starCount; i++) {
-      console.log(starCount - 1);
-      object.children[i].style.color = "#fff"
+      object.children[i].style.color = "#fff";
+    }
+  } else if (starCount > stars) {
+    for (var i = stars; i < starCount; i++) {
+      object.children[i].style.color = "#fff";
     }
   }
 }
 
 function ratingMClick(object, starCount) {
-  for (var i = 0; i < starCount; i++) {
-    object.children[i].style.color = "#ffc107"
+  if (stars < starCount) {
+    for (var i = 0; i < starCount; i++) {
+      object.children[i].style.color = "#ffc107";
+    }
+  } else {
+    for (var i = starCount; i < 5; i++) {
+      object.children[i].style.color = "#fff";
+    }
   }
   ratingSet = true;
   stars = starCount;
-  console.log(stars)
 }

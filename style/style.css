@@ -207,21 +207,18 @@ background: -webkit-linear-gradient(left, rgb(255, 255, 255), yellow);
 .input-field:focus label {
     color: #ffffff !important;
 }
-
 #form-content .btn {
-    background-color: #123;
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     transition: 0.3s;
+    border: none;
 }
 
 #form-content .btn:hover {
     background-color: #123;
     color: yellow;
-    /* box-shadow: none; */
-    box-shadow: 0 0 10px 5px #123;
+    box-shadow: 0 0 10px 5px yellow;
 }
-
-/* Portfolio section ends */
 
 /* Reviews Section */
 #reviews-section {
@@ -508,6 +505,36 @@ a:hover {
 }
 
 /* Main Review Page ends */
+
+/* Add Review Page starts */
+.review-act-form {
+    color: #fff;
+    /* background: url("../images/S/e5109b79-c4c9-4721-a20f-12443c06174a.jpg"); */
+    background-color: #123;
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    height: 100%;
+    /* border-radius: 0% 10px 10px 0%; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .review-act-form h2,
+.review-act-form p {
+    background: -webkit-linear-gradient(left, rgb(255, 255, 255), yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+.review-act-form .form-control{
+    /* width: 50%; */
+}
+
+/* Add Review Page ends */
+
+
 @media (min-width: 992px) {
     /* #form-main .row {
             padding-left: 0px !important;
