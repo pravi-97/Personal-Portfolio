@@ -11,8 +11,12 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+h1 {
+    font-size: calc(1.375rem + 1.5vw) !important;
+}
+
 h1 span {
-    font-size: calc(1.375rem + 1.5vw);
+    font-size: calc(1.375rem + 1.5vw) !important;
     color: yellow;
 }
 
@@ -37,6 +41,13 @@ body {
     font-weight: bold;
     transition: 0.3s;
     color: black;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    /* box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width); */
+    box-shadow: none;
 }
 
 .navbar-nav .nav-link.active {
@@ -167,9 +178,9 @@ body {
 }
 
 .act-form h2,
-.act-form p{
-background: -webkit-linear-gradient(left, rgb(255, 255, 255), yellow);
-   -webkit-background-clip: text;
+.act-form p {
+    background: -webkit-linear-gradient(left, rgb(255, 255, 255), yellow);
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -191,7 +202,7 @@ background: -webkit-linear-gradient(left, rgb(255, 255, 255), yellow);
 .form-control:focus {
     background-color: transparent;
     color: rgb(255, 255, 255);
-    border-color: transparent;
+    border-color: transparent !important;
     outline: 0;
     box-shadow: none;
 }
@@ -208,9 +219,11 @@ background: -webkit-linear-gradient(left, rgb(255, 255, 255), yellow);
 .input-field:focus label {
     color: #ffffff !important;
 }
-.main-from-btn{
+
+.main-from-btn {
     padding-top: 15px;
 }
+
 #form-content .btn {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -232,6 +245,7 @@ background: -webkit-linear-gradient(left, rgb(255, 255, 255), yellow);
 .review-container {
     white-space: nowrap;
     overflow: hidden;
+    /* height: 30%; */
 }
 
 .review-container .logo {
@@ -342,6 +356,7 @@ background: -webkit-linear-gradient(left, rgb(255, 255, 255), yellow);
     border: none;
     transition: 0.5s;
 }
+
 .review-button .btn:hover {
     background-color: #000;
     color: #fff;
@@ -420,19 +435,23 @@ a:hover {
 .reviews-filter {
     margin-top: 15px;
 }
-.reviews-filter .form-select{
+
+.reviews-filter .form-select {
     color: #000;
     border: none;
 }
+
 /* style for select */
-.reviews-filter .form-select option{
+.reviews-filter .form-select option {
     background-color: #123;
 }
-.reviews-filter .form-select option:hover{
+
+.reviews-filter .form-select option:hover {
     background-color: rgb(255, 255, 255);
     color: #000;
-    
+
 }
+
 .reviews-main {
     max-height: 100vh;
     /* margin-top: 15px; */
@@ -532,6 +551,10 @@ a:hover {
 /* Main Review Page ends */
 
 /* Add Review Page starts */
+#add-review-section {
+    background-color: #123;
+}
+
 .review-act-form {
     color: #fff;
     /* background: url("../images/S/e5109b79-c4c9-4721-a20f-12443c06174a.jpg"); */
@@ -553,41 +576,46 @@ a:hover {
     -webkit-text-fill-color: transparent;
 } */
 
-.review-act-form .form-control{
+.review-act-form .form-control {
     /* width: 50%; */
 }
+
 .isProjectQuestion,
-.formStarRating{
+.formStarRating {
     /* margin-top: 2%; */
-   padding: 1rem .75rem;
+    padding: 1rem .75rem;
     border: 1px solid;
     border-top: none;
     border-left: none;
     border-right: none;
     border-color: yellow;
 }
-.textNotPublished{
+
+.textNotPublished {
     padding: 1rem .75rem;
-        border: 3px solid;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        border-color: yellow;
-        text-align: center;
+    border: 3px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: yellow;
+    text-align: center;
 }
-.review-form-buttons{
+
+.review-form-buttons {
     margin-top: 2%;
-} 
+}
 
 .isProjectQuestion,
-.formStarRating{
+.formStarRating {
     transition: 0.3s;
 }
-#errorMessage{
+
+#errorMessage {
     color: yellow;
     margin-bottom: 2%;
     transition: 0.3s;
 }
+
 /* Add Review Page ends */
 
 
@@ -598,6 +626,16 @@ a:hover {
             margin-left: 0px !important;
             margin-right: 0px !important;
         } */
+}
+
+@media (max-width: 991px) {
+    .navbar-nav .nav-link {
+        /* background-color: #ffffff; */
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 50px;
+        text-align: center;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -634,6 +672,10 @@ a:hover {
 
     p a {
         font-size: medium;
+    }
+
+    h1 span {
+        font-size: larger;
     }
 
     /* navbar and main-content section */
@@ -682,10 +724,32 @@ a:hover {
         transition: fill 0.3s;
         transition: 0.3s;
     }
+
+    #copyrightPart {
+        margin-top: 10px;
+    }
 }
 
 
-/* @media (max-width: 576px) { */
+@media (max-width: 576px) {
+    .m-stars {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+    }
+
+    /* .m-user_info {
+        position: static;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .m-user_info p {
+        margin-top: 0;
+        margin-bottom: 0;
+    } */
+}
+
 /* #portfolio-section .row div:nth-last-child(even) {
         margin-left: 40% !important;
     }
@@ -697,4 +761,9 @@ a:hover {
     #portfolio-section .row div:nth-last-child(odd) {
         margin-right: 40% !important;
     } */
-/* } */
+
+/* #portfolio-section .row{
+            margin-left: 0%;
+            margin-right: 50%;
+
+        } */

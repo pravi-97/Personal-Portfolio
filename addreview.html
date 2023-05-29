@@ -72,11 +72,13 @@
                             <div class="isProjectQuestion" id="isProjectQuestion">
                                 Did we do a project for you?
                                 <span class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="isProjectYes" value="Yes" onchange="clickedRadio()">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="isProjectYes" value="Yes" onchange="clickedRadio()">
                                     <label class="form-check-label" for="isProjectYes">Yes</label>
                                 </span>
                                 <span class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="isProjectNo" value="No" onchange="clickedRadio()">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="isProjectNo" value="No" onchange="clickedRadio()">
                                     <label class="form-check-label" for="isProjectNo">No</label>
                                 </span>
                             </div>
@@ -88,16 +90,26 @@
                                 <p>How would you rate us on a scale of 1 to 5 where 1 is poor and 5 being
                                     excellent!</p>
                                 <div class="review-stars" id="review-stars">
-                                    <i class="fa-solid fa-star rating-star" onmouseover="ratingMOver(this.parentElement, 1)"
-                                        onmouseleave="ratingMOut(this.parentElement, 1)" onclick="ratingMClick(this.parentElement, 1)"></i>
-                                    <i class="fa-solid fa-star rating-star" onmouseover="ratingMOver(this.parentElement, 2)"
-                                        onmouseleave="ratingMOut(this.parentElement, 2)" onclick="ratingMClick(this.parentElement, 2)"></i>
-                                    <i class="fa-solid fa-star rating-star" onmouseover="ratingMOver(this.parentElement, 3)"
-                                        onmouseleave="ratingMOut(this.parentElement, 3)" onclick="ratingMClick(this.parentElement, 3)"></i>
-                                    <i class="fa-solid fa-star rating-star" onmouseover="ratingMOver(this.parentElement, 4)"
-                                        onmouseleave="ratingMOut(this.parentElement, 4)" onclick="ratingMClick(this.parentElement, 4)"></i>
-                                    <i class="fa-solid fa-star rating-star" onmouseover="ratingMOver(this.parentElement, 5)"
-                                        onmouseleave="ratingMOut(this.parentElement, 5)" onclick="ratingMClick(this.parentElement, 5)"></i>
+                                    <i class="fa-solid fa-star rating-star"
+                                        onmouseover="ratingMOver(this.parentElement, 1)"
+                                        onmouseleave="ratingMOut(this.parentElement, 1)"
+                                        onclick="ratingMClick(this.parentElement, 1)"></i>
+                                    <i class="fa-solid fa-star rating-star"
+                                        onmouseover="ratingMOver(this.parentElement, 2)"
+                                        onmouseleave="ratingMOut(this.parentElement, 2)"
+                                        onclick="ratingMClick(this.parentElement, 2)"></i>
+                                    <i class="fa-solid fa-star rating-star"
+                                        onmouseover="ratingMOver(this.parentElement, 3)"
+                                        onmouseleave="ratingMOut(this.parentElement, 3)"
+                                        onclick="ratingMClick(this.parentElement, 3)"></i>
+                                    <i class="fa-solid fa-star rating-star"
+                                        onmouseover="ratingMOver(this.parentElement, 4)"
+                                        onmouseleave="ratingMOut(this.parentElement, 4)"
+                                        onclick="ratingMClick(this.parentElement, 4)"></i>
+                                    <i class="fa-solid fa-star rating-star"
+                                        onmouseover="ratingMOver(this.parentElement, 5)"
+                                        onmouseleave="ratingMOut(this.parentElement, 5)"
+                                        onclick="ratingMClick(this.parentElement, 5)"></i>
                                 </div>
                             </div>
                             <span class="form-floating mb-3 input-field">
@@ -111,33 +123,36 @@
                                 <label for="reviewComment">Review Comment</label>
                             </span>
                             <div id="displayonProjectTrue">
-                                <div class="textNotPublished">The below fields will not be published in the webiste. these are for me to learn how to
+                                <div class="textNotPublished">The below fields will not be published in the webiste.
+                                    these are for me to learn how to
                                     do a better job!</div>
                                 <span class="form-floating mb-3 input-field">
-                                    <textarea class="form-control" placeholder="Lorem ipsum dolor sit amet." id="question1"
-                                        style="height: 100px"></textarea>
+                                    <textarea class="form-control" placeholder="Lorem ipsum dolor sit amet."
+                                        id="question1" style="height: 100px"></textarea>
                                     <label for="question1">What do you think could have been better?</label>
                                 </span>
                                 <span class="form-floating mb-3 input-field">
-                                    <textarea class="form-control" placeholder="Lorem ipsum dolor sit amet." id="question2"
-                                        style="height: 100px"></textarea>
+                                    <textarea class="form-control" placeholder="Lorem ipsum dolor sit amet."
+                                        id="question2" style="height: 100px"></textarea>
                                     <label for="question2">What did you like about working with us?</label>
                                 </span>
                                 <span class="form-floating mb-3 input-field">
-                                    <textarea class="form-control" placeholder="Lorem ipsum dolor sit amet." id="question3"
-                                        style="height: 100px"></textarea>
+                                    <textarea class="form-control" placeholder="Lorem ipsum dolor sit amet."
+                                        id="question3" style="height: 100px"></textarea>
                                     <label for="question3">Do you have any other feedback that you would like to
                                         share</label>
                                 </span>
-                                
                             </div>
                             <div class="mb-3 text-center review-form-buttons">
-                                <div id="errorMessage">Input Field in <span style="color: red; font-weight: bolder;">RED</span> underlines are Mandatory fields</div>
-                                <input class="btn btn-primary mx-1" type="submit" value="Submit" onclick="validateInputs();">
-                                <input class="btn btn-primary mx-1" type="button" value="Reset" onclick="resetClicked();">
+                                <div id="errorMessage">Input Field in <span
+                                        style="color: red; font-weight: bolder;">RED</span> Underlines are Mandatory
+                                    Fields</div>
+                                <input class="btn btn-primary mx-1" type="submit" value="Submit"
+                                    onclick="validateInputs();">
+                                <input class="btn btn-primary mx-1" type="reset" value="Reset"
+                                    onclick="resetClicked();">
                             </div>
                         </form>
-
                     </div>
                 </div>
             </div>

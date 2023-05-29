@@ -112,13 +112,13 @@ function validateInputs() {
   if (!isValidFullName || !isValidOccupation || !isValidCompany || !isValidEmail || !isValidReviewTitle || !isValidReviewComment) {
     errorMessage.style.visibility = "visible";
     event.preventDefault();
-    submitForm();
+    // submitForm();
   }else 
   submitForm();
 }
 
 function changeBorder(ele, isValidate) {
-  if (isValidate == true) {
+  if (isValidate) {
     if (ele.value == "" || ele.value == null) {
       ele.style.borderColor = "red";
       return false;
